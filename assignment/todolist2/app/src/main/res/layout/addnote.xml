@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    >
+
+    <EditText
+        android:id="@+id/addnote_text"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:focusable="true"
+        android:background="@drawable/bg_edit"
+        android:gravity="start|top"
+        android:layout_height="200sp" />
+    
+    <RadioGroup
+        android:id="@+id/addnote_group"
+        android:layout_width="match_parent"
+        android:layout_height="80sp" >
+
+        <RadioButton
+            android:id="@+id/addnote_radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Emergency" />
+
+        <RadioButton
+            android:id="@+id/addnote_radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hurry" />
+
+        <RadioButton
+            android:id="@+id/addnote_radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Normal" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addnote_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        />
+</LinearLayout>
